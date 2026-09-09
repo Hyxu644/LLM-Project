@@ -3,7 +3,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 
 model = ChatTongyi(model="qwen3-max")
-str_parser = StrOutputParser()
+str_parser = StrOutputParser() 
 
 first_prompt = PromptTemplate.from_template(
     "My neighbor's last name is {lastname}, and they just had a {gender}. Please help come up with a name. Generate only one name and return just the name, no extra information."
